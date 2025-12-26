@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Surprise</title>
+
+  <!-- Fun birthday font (CDN, since it works for you) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/final.css">
+
+</head>
+<body>
+
+  <div class="card">
+    <h1>All i want for birthday is......</h1>
+
+    <p>Snacks!</p>
+    <p>Socks!</p>
+    <p>1</p>
+
+  </div>
+  <script>
+    // Load YouTube IFrame API
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: 'KRtvCCDbLgQ', // Replace with YouTube video ID
+        playerVars: {
+          autoplay: 1,
+          loop: 1,
+          playlist: 'KRtvCCDbLgQ'
+        },
+        events: {
+          onReady: function(e) {
+            e.target.playVideo();
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>
