@@ -9,7 +9,7 @@ function sendOTP() {
   }
 
   if (!email.endsWith("@gmail.com")) {
-    alert("Use Gmail or Yahoo only");
+    alert("Use Gmail only");
     return;
   }
 
